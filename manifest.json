@@ -1,0 +1,15 @@
+{
+  "name": "Phishing Email Detector",
+  "version": "1.0",
+  "description": "Detects potential phishing emails in Gmail",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://mail.google.com/*"],
+    "js": ["content.js"]
+  }]
+}
