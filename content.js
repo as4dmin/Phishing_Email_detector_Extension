@@ -19,7 +19,7 @@ function scanEmailContent() {
 
   // Check links with Google Safe Browsing API
   if (links.length > 0) {
-    const apiKey = "AIzaSyChAVR4hpPbSIaoNrBT-pBkltm_-kqt1Ys"; // Replace with your API key
+    const apiKey = "your key; // Replace with your API key
     fetch(`https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
